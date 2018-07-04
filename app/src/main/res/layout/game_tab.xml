@@ -1,0 +1,137 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/app_main">
+        <ImageButton
+            android:id="@android:id/home"
+            android:src="@drawable/backbtn"
+            android:background="@drawable/image_button_bg"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/title_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@android:id/home"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lotteryName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="彩种名"
+                android:textSize="@dimen/title_text_size"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#80ffffff"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/methodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/white"
+                    android:text="三星直选"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/titleAssist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="4dp"
+                    android:visibility="gone"
+                    android:src="@drawable/xh_drop"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/trend"
+                android:layout_height="match_parent"
+                android:layout_width="48dp"
+                android:background="@drawable/image_button_bg"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/xh_zoushi"
+                android:visibility="visible"/>
+
+            <ImageButton
+                android:id="@+id/modify"
+                android:layout_height="match_parent"
+                android:layout_width="48dp"
+                android:background="@drawable/image_button_bg"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/xh_shezhi"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/gameSelection"
+            style="@style/game_tab_radio_button"
+            android:checked="true"
+            android:text="选号"/>
+
+        <RadioButton
+            android:id="@+id/gameDraw"
+            style="@style/game_tab_radio_button"
+            android:text="开奖" />
+
+        <RadioButton
+            android:id="@+id/gameArticle"
+            style="@style/game_tab_radio_button"
+            android:text="预测" />
+
+        <RadioButton
+            android:id="@+id/gameDescribe"
+            style="@style/game_tab_radio_button"
+            android:text="玩法" />
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_shadow"/>
+    </FrameLayout>
+</LinearLayout>

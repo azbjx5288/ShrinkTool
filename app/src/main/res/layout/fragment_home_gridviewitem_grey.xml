@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="10dp"
+    android:background="#ecebeb">
+
+    <ImageView
+        android:id="@+id/home_lottery_ico"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingRight="8dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cz_icon_xjssc"/>
+
+    <TextView
+        android:id="@+id/recentlyplayed_name"
+        android:layout_toRightOf="@id/home_lottery_ico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:maxLines="1"
+        android:text="时时彩"
+        android:textSize="16sp"
+        android:textColor="#323232"/>
+
+    <TextView
+        android:id="@+id/recentlyplayed_tip"
+        android:layout_below="@id/recentlyplayed_name"
+        android:layout_toRightOf="@id/home_lottery_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#979797"
+        android:text="开始选号"/>
+</RelativeLayout>

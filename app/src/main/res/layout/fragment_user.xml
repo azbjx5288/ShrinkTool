@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec">
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="#e04b62"
+        android:orientation="vertical">
+        <com.shrinktool.view.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/my_heard"/>
+        <Button
+            android:id="@+id/login_btn"
+            android:stateListAnimator="@null"
+            android:layout_width="wrap_content"
+            android:minWidth="192dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/user_login_button"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:text="登录"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="----"/>
+    </LinearLayout>
+
+    <View style="@style/divideLine"
+        android:background="#e35d72"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#e04b62">
+        <TextView
+            android:drawableTop="@drawable/my_sub_wdfa"
+            android:id="@+id/my_sub_wdfa"
+            android:text="我的方案"
+            style="@style/userSubButton"/>
+        <TextView
+            android:drawableTop="@drawable/my_sub_dkj"
+            android:id="@+id/my_sub_dkj"
+            android:text="待开奖"
+            style="@style/userSubButton"/>
+        <TextView
+            android:drawableTop="@drawable/my_sub_zj"
+            android:id="@+id/my_sub_zj"
+            android:text="中奖"
+            style="@style/userSubButton"/>
+        <TextView
+            android:drawableTop="@drawable/my_sub_wzj"
+            android:id="@+id/my_sub_wzj"
+            android:text="未中奖"
+            style="@style/userSubButton"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/userGridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numColumns="3"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>
+
+

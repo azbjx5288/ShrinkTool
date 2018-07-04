@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/gamePickerBG"
+              android:orientation="vertical">
+
+    <com.shrinktool.view.NumberGroupView
+        android:id="@+id/pick_column_NumberGroupView_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:checkedDrawable="@drawable/bg_special_complete_circle_choose_red_ball"
+        app:itemSize="42dp"
+        app:verticalGap="16dp"
+        app:checkedTextColor="@color/white"
+        app:textSize="18sp"
+        app:uncheckedDrawable="@drawable/bg_special_complete_circle_defalut_ball"
+        app:numberStyle="false"
+        app:chooseMode="false"
+        app:minNumber="1"
+        app:maxNumber="33"
+        app:column="7" />
+
+    <View style="@style/divideLine2"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+
+    <com.shrinktool.view.NumberGroupView
+        android:id="@+id/pick_column_NumberGroupView_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:textColor="#4ab5eb"
+        app:checkedDrawable="@drawable/bg_special_complete_circle_choose_blue_ball"
+        app:itemSize="42dp"
+        app:verticalGap="16dp"
+        app:checkedTextColor="@color/white"
+        app:textSize="18sp"
+        app:uncheckedDrawable="@drawable/bg_special_complete_circle_defalut_ball"
+        app:numberStyle="false"
+        app:chooseMode="false"
+        app:minNumber="1"
+        app:maxNumber="16"
+        app:column="7" />
+    <View style="@style/divideLine2"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+</LinearLayout>

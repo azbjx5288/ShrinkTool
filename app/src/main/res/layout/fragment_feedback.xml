@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/white"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint="输入您的意见反馈"
+        android:padding="4dp"
+        android:minHeight="120dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="46dp"
+            android:background="@drawable/button_3"
+            android:layout_marginRight="2dp"
+            android:textColor="#e04b62"
+            android:textSize="18sp"
+            android:text="取消"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_height="46dp"
+            android:background="@drawable/button_login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+

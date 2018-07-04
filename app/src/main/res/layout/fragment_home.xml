@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <fragment
+            android:id="@+id/fragment_cycle_viewpager_content"
+            android:name="com.shrinktool.component.CycleViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"/>
+
+        <View style="@style/divideLine"
+              android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#787878"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/home_icon_hot"
+            android:text="热门彩种"/>
+
+        <View style="@style/divideLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/homeHot1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@drawable/home_item_passed_bg"
+                android:layout_height="76dp">
+                <TextView
+                    android:id="@+id/homeHot1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:text="热门1"/>
+                <TextView
+                    android:layout_below="@id/homeHot1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#979797"
+                    android:text="开始选号"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/homeHot1Icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingRight="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/jia"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF"/>
+            <RelativeLayout
+                android:id="@+id/homeHot2"
+                android:background="@drawable/home_item_passed_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_height="76dp">
+                <TextView
+                    android:id="@+id/homeHot2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:text="热门2"/>
+                <TextView
+                    android:layout_below="@id/homeHot2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#979797"
+                    android:text="开始选号"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/homeHot2Icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingRight="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/jia"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/divideLine"
+              android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/lotteryHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

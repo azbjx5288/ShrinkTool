@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e04b62"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="用户服务协议"/>
+        <ImageView
+            android:id="@+id/registerAgreementClose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/image_button_bg"
+            android:src="@drawable/login_zhuche_xieyi_close"/>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/registerAgreementWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"/>
+    <Button
+        android:id="@+id/registerAgreementOK"
+        android:stateListAnimator="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:background="@drawable/button_login"
+        android:text="确 定"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>

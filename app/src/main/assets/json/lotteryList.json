@@ -1,0 +1,62 @@
+[
+  {
+    "lottery_id": "1",
+    "name": "CQSSC",
+    "cname": "重庆时时彩",
+    "lottery_type": "1",
+    "property_id": "1",
+    "yearly_start_closed": "2016-02-07",
+    "yearly_end_closed": "2016-02-13",
+    "status": "8"
+  },
+  {
+    "lottery_id": "4",
+    "name": "XJSSC",
+    "cname": "新疆时时彩",
+    "lottery_type": "1",
+    "property_id": "1",
+    "yearly_start_closed": "2016-02-07",
+    "yearly_end_closed": "2016-02-13",
+    "status": "8"
+  },
+  {
+    "lottery_id": "8",
+    "name": "TJSSC",
+    "cname": "天津时时彩",
+    "lottery_type": "1",
+    "property_id": "1",
+    "yearly_start_closed": "2016-02-07",
+    "yearly_end_closed": "2016-02-13",
+    "status": "8"
+  },
+  {
+    "lottery_id": "9",
+    "name": "3D",
+    "cname": "福彩3D",
+    "lottery_type": "4",
+    "property_id": "5",
+    "yearly_start_closed": "2016-02-07",
+    "yearly_end_closed": "2016-02-13",
+    "status": "8"
+  },
+  {
+    "lottery_id": "10",
+    "name": "P3P5",
+    "cname": "体彩排列三",
+    "lottery_type": "1",
+    "property_id": "5",
+    "yearly_start_closed": "2016-02-07",
+    "yearly_end_closed": "2016-02-13",
+    "status": "8"
+  },
+  {
+    "lottery_id": "100",
+    "name": "FCSSQ",
+    "cname": "福彩双色球",
+    "lottery_type": "3",
+    "property_id": "5",
+    "yearly_start_closed": "2016-02-07",
+    "yearly_end_closed": "2016-02-13",
+    "status": "8"
+  }
+]

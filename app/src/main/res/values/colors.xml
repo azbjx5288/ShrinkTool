@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color><!--白色 -->
+    <!--暗黄褐色 -->
+    <color name="darkgray">#a9a9a9</color><!--暗灰色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="gray3">#979797</color><!--灰色 -->
+    <color name="grayBG">#ECECEC</color><!--灰色背景 -->
+    <color name="cadetblue">#5f9ea0</color><!--军兰色 -->
+    <!--暗蓝色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="black3">#303030</color><!--黑色 -->
+    <!-- 彩球的颜色 -->
+    <color name="ball_text_color">#0d6755</color>
+
+    <color name="textRed">#e04b62</color>
+
+    <color name="app_main">#F34C66</color><!--#00c9cb-->
+    <color name="app_main_dark">#16A085</color><!--#008b8c-->
+    <color name="text_dark">#505050</color>
+    <color name="text_middle">#adadad</color>
+    <color name="text_shallow">#c5c5c5</color>
+    <color name="background">#f5f5f5</color>
+    <color name="gamePickerBG">#ECECEC</color>
+    <color name="ruleItem">#DFDFDF</color>
+    <color name="buttonBarBg">#504f4d</color>
+    <color name="imageBgPassed">#20000000</color>
+    <color name="imageBgNormal">#00000000</color>
+    <color name="homeItemBgPassed">#dfdfdf</color>
+    <color name="homeItemBgNormal">#ffffff</color>
+</resources>

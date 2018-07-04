@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/gameScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gamePickerBG">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.shrinktool.view.IssueInfoDropDown
+                android:id="@+id/game_issue_info_drop_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gamePickerBG"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/game_issue_info_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:visibility="visible"
+                    android:background="#F4F4F4"
+                    android:orientation="vertical">
+                    <TextView
+                        android:paddingLeft="16dp"
+                        android:id="@+id/gameIssueInfoList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/game_issue_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:background="#F4F4F4"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/game_issue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="----期截止时间："/>
+
+                    <TextView
+                        android:id="@+id/game_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_main"
+                        android:text="---"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/game_drop_down"/>
+            </com.shrinktool.view.IssueInfoDropDown>
+
+            <LinearLayout
+                android:id="@+id/pick_game_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="加载中..."
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <View
+                android:id="@+id/gameScrollViewPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/lottery_choose_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/buttonBarBg"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/pick_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/delete"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/ball_text_color"
+            android:text="清空"/>
+
+        <Button
+            android:id="@+id/choose_done_button"
+            android:stateListAnimator="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_button_bg"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:text="过滤"/>
+
+        <TextView
+            android:id="@+id/pick_notice"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textColor="@color/background"
+            android:text="0注 0元"/>
+    </RelativeLayout>
+</LinearLayout>

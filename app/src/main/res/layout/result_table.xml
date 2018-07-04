@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/game_tab_radio_button"
+            android:checked="true"
+            android:text="全部" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/game_tab_radio_button"
+            android:text="待开奖" />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/game_tab_radio_button"
+            android:text="中奖" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            style="@style/game_tab_radio_button"
+            android:text="未中奖" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_shadow"/>
+    </FrameLayout>
+</LinearLayout>
+
+

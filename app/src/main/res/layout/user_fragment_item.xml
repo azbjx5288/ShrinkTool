@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@drawable/home_item_passed_bg">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="20dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cz_icon_xjssc"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="时时彩"/>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="声音"/>
+
+    <View style="@style/divideLine"
+          android:layout_height="2dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:background="#80000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:text="开启声音提醒"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:text=""
+            android:id="@+id/soundCheckBox"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="彩种"/>
+
+    <View style="@style/divideLine"
+          android:layout_height="2dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:background="#80000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/nameSSQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:text="双色球"/>
+        <TextView
+            android:layout_below="@id/nameSSQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14sp"
+            android:text="每周二、四、日提醒"/>
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:text=""
+            android:id="@+id/checkBoxSSQ"/>
+    </RelativeLayout>
+
+    <View style="@style/divideLine"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/nameFC3D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:text="福彩3D"/>
+        <TextView
+            android:layout_below="@id/nameFC3D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14sp"
+            android:text="每日提醒"/>
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:text=""
+            android:id="@+id/checkBoxFC3D"/>
+    </RelativeLayout>
+
+    <View style="@style/divideLine"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/namePL3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:text="排列3"/>
+        <TextView
+            android:layout_below="@id/namePL3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14sp"
+            android:text="每周二、四、日提醒"/>
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:text=""
+            android:id="@+id/checkBoxPL3"/>
+    </RelativeLayout>
+
+    <View style="@style/divideLine"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"/>
+</LinearLayout>

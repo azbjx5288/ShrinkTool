@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/findRadioGroup"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/game_tab_radio_button"
+            android:checked="true"
+            android:text="手机注册" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/game_tab_radio_button"
+            android:text="用户名注册" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/cellphoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ececec"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="15dp"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawablePadding="8dp"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:text="手机号："/>
+                <EditText
+                    android:id="@+id/cellphoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:hint="输入手机号码"
+                    android:textColorHint="@color/text_middle"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/cellphoneNumberClear"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/login_enter_delete"/>
+            </LinearLayout>
+
+            <View style="@style/divideLine"
+                  android:background="#dcdcdc"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawablePadding="8dp"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:text="验证码："/>
+                <EditText
+                    android:id="@+id/cellphoneVerificationCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="输入验证码"
+                    android:inputType="number"
+                    android:textColorHint="@color/text_middle"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"/>
+                <Button
+                    android:id="@+id/cellphoneVerificationCodeButton"
+                    android:stateListAnimator="@null"
+                    android:layout_width="84dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/button_login"
+                    android:text="获取验证码"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <View style="@style/divideLine"
+                  android:background="#dcdcdc"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawablePadding="8dp"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:text="密　码："/>
+                <EditText
+                    android:id="@+id/cellphonePassword"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="输入密码"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/text_middle"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/cellphonePasswordClear"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/login_enter_delete"/>
+            </LinearLayout>
+
+            <View style="@style/divideLine"
+                  android:background="#dcdcdc"/>
+
+            <Button
+                android:id="@+id/cellphoneOk"
+                android:stateListAnimator="@null"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:background="@drawable/button_login"
+                android:text="注 册"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/cellphoneAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:textColor="#e04b62"
+                android:text="注册即同意《彩票助手用户协议》"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ececec"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="15dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawablePadding="8dp"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:text="用户名："/>
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:hint="5-12个字符，以字母开头"
+                    android:textColorHint="@color/text_middle"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/userNameClear"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/login_enter_delete"/>
+            </LinearLayout>
+
+            <View style="@style/divideLine"
+                  android:background="#dcdcdc"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawablePadding="8dp"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:text="密　码："/>
+                <EditText
+                    android:id="@+id/newPassword"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:hint="6-15字符，不能为纯数字或纯字母"
+                    android:textColorHint="@color/text_middle"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/newPasswordClear"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/login_enter_delete"/>
+            </LinearLayout>
+
+            <View style="@style/divideLine"
+                  android:background="#dcdcdc"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:drawablePadding="8dp"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:text="确认密码："/>
+                <EditText
+                    android:id="@+id/newPasswordVerify"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:hint="6-15字符，不能为纯数字或纯字母"
+                    android:textColorHint="@color/text_middle"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"/>
+
+                <ImageView
+                    android:id="@+id/newPasswordVerifyClear"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/login_enter_delete"/>
+            </LinearLayout>
+
+            <View style="@style/divideLine"
+                  android:background="#dcdcdc"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:stateListAnimator="@null"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:background="@drawable/button_login"
+                android:text="注 册"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/userNameAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:textColor="#e04b62"
+                android:text="注册即同意《彩票助手用户协议》"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_shadow"/>
+    </FrameLayout>
+</LinearLayout>

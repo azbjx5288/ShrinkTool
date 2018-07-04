@@ -1,0 +1,8 @@
+<resources>
+    <!--<string name="app_name">金亚洲双色球</string>-->
+    <string name="app_name">彩票助手</string>
+
+    <string name="is_alert_dialog_title">提示信息</string>
+    <string name="is_alert_dialog_cancel">取消</string>
+    <string name="is_alert_dialog_ok">确定</string>
+</resources>

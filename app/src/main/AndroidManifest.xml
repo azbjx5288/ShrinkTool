@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.shrinktool"
+          android:installLocation="auto">
+
+    <!-- 检查网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 使用网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:name=".app.GoldenAsiaApp"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:label="@string/app_name">
+        <uses-library android:name="android.test.runner" />
+
+        <meta-data android:value="57c92c9f67e58e0be6003562" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>
+
+        <activity
+            android:name=".app.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".app.FragmentLauncher"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".app.GoldenLogin"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".app.ContainerActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".app.GameActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".app.TrendActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+
+        <activity android:name=".component.PicturePicker"/>
+
+        <activity android:name=".app.DebugActivity"
+                  android:label="测试"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.WebViewActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+
+        <provider
+            android:name=".app.DataProvider"
+            android:authorities="com.shrinktool.dataprovider"
+            android:exported="false"/>
+
+
+        <!-- QQ分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105757316" /><!--tencent你的AppId-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

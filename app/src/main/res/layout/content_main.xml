@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDCD"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_home"
+            style="@style/tab_radio_button"
+            android:drawableTop="@drawable/menu_icon_xuanhao"
+            android:text="选号"/>
+
+        <RadioButton
+            android:id="@+id/btn_classify"
+            style="@style/tab_radio_button"
+            android:drawableTop="@drawable/menu_icon_faxian"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/btn_me"
+            style="@style/tab_radio_button"
+            android:drawableTop="@drawable/menu_icon_wo"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 选号属性-->
+    <declare-styleable name="NumberGroupView">
+        <attr name="textColor" format="color" />
+        <attr name="checkedTextColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="checkedDrawable" format="reference"/>
+        <attr name="uncheckedDrawable" format="reference"/>
+        <attr name="itemSize" format="dimension"/>
+        <attr name="verticalGap" format="dimension"/>
+        <attr name="numberStyle" format="boolean"/>
+        <attr name="chooseMode" format="boolean"/>
+        <attr name="maxNumber" format="integer"/>
+        <attr name="minNumber" format="integer"/>
+        <attr name="column" format="integer"/>
+        <attr name="missTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!--TableMenu-->
+    <declare-styleable name="TableMenu">
+        <attr name="tmItemTextColor" format="color" />
+        <attr name="tmCurrentTextColor" format="color" />
+        <attr name="tmDivideLineColor" format="color" />
+        <attr name="tmTextSize" format="dimension" />
+        <attr name="tmVerticalGap" format="dimension"/>
+        <attr name="tmHorizontalGap" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 开奖走势 -->
+    <declare-styleable name="TrendView">
+        <attr name="tr_textcolor" format="color" />
+        <attr name="tr_textsize" format="dimension" />
+        <attr name="tr_checkeddrawable" format="reference"/>
+        <attr name="tr_titlebackground" format="reference"/>
+        <attr name="tr_itemsize" format="dimension"/>
+        <attr name="tr_verticalgap" format="dimension"/>
+        <attr name="tr_horizontalgap" format="dimension"/>
+        <attr name="tr_numberstyle" format="boolean"/>
+        <attr name="tr_maxcopies_x" format="integer"/>
+        <attr name="tr_mincopies_x" format="integer"/>
+        <attr name="tr_column" format="integer"/>
+        <attr name="tr_linecolor" format="integer"/>
+        <attr name="tr_isNeedLinkEveryBall" format="boolean"/>
+        <attr name="tr_linkEveryBallLineColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TagCloudLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+        <!-- 是否是固定布局 -->
+        <attr name="isFixed" format="boolean" />
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+</resources>

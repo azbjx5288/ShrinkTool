@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/name"
+            android:background="@drawable/xh_shuwei"
+            style="@style/pick_column_style"
+            android:layout_marginLeft="10dp"
+            android:text="百位"/>
+
+        <com.shrinktool.view.NumberGroupView
+            android:id="@+id/pick_column_NumberGroupView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:checkedDrawable="@drawable/bg_special_complete_circle_choose_ball"
+            app:itemSize="36dp"
+            app:verticalGap="8dp"
+            app:textSize="16sp"
+            app:uncheckedDrawable="@drawable/bg_special_complete_circle_defalut_ball"
+            app:numberStyle="true"
+            app:chooseMode="false"
+            app:minNumber="0"
+            app:maxNumber="9"
+            app:column="7" />
+    </LinearLayout>
+    <View style="@style/divideLine"
+        android:id="@+id/divide"/>
+</LinearLayout>

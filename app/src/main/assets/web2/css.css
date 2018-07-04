@@ -1,0 +1,76 @@
+html, body, div, span, img, ul, h3, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: "微软雅黑";
+	line-height: 1;
+}
+li{list-style-type: none;}
+
+
+
+.lotto a {
+	text-decoration: none;
+	line-height: 220%;
+	font-size: 1.2em;
+	color: #2e2e2e;
+	padding-left: 20px;
+}
+.lotto li {
+	border-bottom: 1px solid #e3e3e3;
+}
+.lotto {margin-top: 30px;}
+
+
+
+
+
+h3 {
+	color: #2e2e2e;
+	padding: 30px 0 40px 0px;
+	text-align: center;
+	font-size: 1.4em;
+}
+.content {
+	padding: 0 20px;
+	color: #585858;
+	font-size: 1em;
+}
+.content li {
+	padding-bottom: 15px;
+	font-size: 1.2em;
+}
+.content p {
+	line-height: 150%;
+	padding-bottom: 30px;
+	word-break: break-all;
+}
+th {
+	width: 20%;
+	line-height: 200%;
+	border: 1px solid #2e2e2e;
+}
+td {
+	width: 20%;
+	text-align: center;
+	line-height: 150%;
+	font-size: 0.8em;
+	border: 1px solid #2e2e2e;
+}
+.table1, table {
+	border-collapse: collapse;
+}
+.table1 th{width: 10%;
+	line-height: 120%;
+	border: 1px solid #2e2e2e;}
+.table1 td{width: 10%;
+	text-align: center;
+	line-height: 150%;
+	font-size: 0.8em;
+	border: 1px solid #2e2e2e;}
+
+
+.table2 th{width: 50%;}
+.table2 td{width: 20%;line-height: 200%;}

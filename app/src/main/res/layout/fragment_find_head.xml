@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grayBG"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/lotteryHistoryCycleViewPager"
+        android:name="com.shrinktool.component.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"/>
+
+    <RadioGroup
+        android:id="@+id/findRadioGroup"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/game_tab_radio_button"
+            android:checked="true"
+            android:text="最新开奖" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/game_tab_radio_button"
+            android:text="最新预测" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/game_tab_radio_button"
+            android:text="走势图" />
+    </RadioGroup>
+</LinearLayout>

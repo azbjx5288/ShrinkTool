@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="webkit" name="renderer"><!-- 页面默认用极速核 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 指定浏览器按照最高的标准模式解析页面 -->
+    <meta content="telephone=no,email=no" name="format-detection" /><!-- 使设备浏览网页时对数字不启用电话功能 -->
+    <meta name="apple-touch-fullscreen" content="YES"/>  <!-- "添加到主屏幕"后，全屏显示 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>  <!-- 如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容 -->
+    <meta http-equiv="Cache-Control" content="no-cache"/>  <!-- 每次打开都清除浏览器页面缓存 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>方案详情</title>
+    <link rel="stylesheet" type="text/css" href="css/programme.css">
+    <script src="js/template.js" type="text/javascript"></script>
+</head>
+<body onload="onLoaded()">
+<div id="details" class="Pm_conter"></div>
+</body>
+
+<script id="src" type="text/html">
+    <h2>{{lotteryName}}<span>第{{issue}}期 {{methodName}}</span></h2>
+    <div class="Pm_normal">
+        <h3>原始方案：</h3>
+        {{each codeNodes}}
+        <p><a class="img_match{{$value.match}}"></a>{{$value.name}}：
+            {{each $value.item}}
+            <spn class="match{{$value.match}}">{{$value.name}} </spn>
+            {{/each}}
+        </p>
+        {{/each}}
+        <p><span>共{{srcChooseNotes}}注，{{srcChooseNotes * 2}}元</span></p>
+    </div>
+    <div class="Pm_table">
+        <table>
+            <colgroup>
+                <col width="20" />
+                <col width="100" />
+                <col />
+            </colgroup>
+            <thead>
+            <tr>
+                <th colspan="2">过滤设置：</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{each ruleNodes}}
+            <tr>
+                <th><a class="img_match{{$value.match}}"/></th>
+                <td style="text-align:right;padding-right:0">{{$value.name}}：</td>
+                <td>
+                    {{each $value.item}}
+                    <spn class="match{{$value.match}}">{{$value.name}}</spn>
+                    {{/each}}
+                </td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div class="Pm_result fix">
+        <div class="Pm_rltLeft">
+            <p>开奖号码： {{winCodeString}}</p>
+            {{if issueState == 0}}
+            <p>中奖情况：<span style="color:gray">[离线方案]</span></p>
+            {{else if issueState == 1}}
+            <p>中奖情况：<span style="color:gray">未开奖</span></p>
+            {{else if issueState == 2}}
+            <p>中奖情况：<span>未中奖</span></p>
+            {{else if issueState == 3}}
+            <p>中奖情况：<span>中奖</span></p>
+            {{/if}}
+        </div>
+        {{if showReplay == 1}}
+        <div class="Pm_rltBtn">
+            <a href="javascript:onClickReplay();">我要复盘</a>
+        </div>
+        {{/if}}
+    </div>
+    <div class="Pm_normal">
+        <h3>过滤结果：</h3>
+        <p>过滤前共{{srcChooseNotes}}注，过滤后{{outChooseNotes}}注，压缩比{{out2srcRatio}}%</p>
+        {{each resultList}}
+        <p>{{$index + 1}}. {{$value}}</p>
+        {{/each}}
+    </div>
+</script>
+
+<script type="text/javascript">
+    function onClickReplay() {
+        androidJs.onClickReplay();
+    }
+
+    function onLoaded() {
+        var data = androidJs.getData();
+        if (typeof data == "undefined") {
+            console.log("androidJs.getData() == null");
+            return;
+        }
+        data = JSON.parse(data);
+
+        var source = document.getElementById('src').innerText;
+        //是否编码输出 HTML 字符
+        template.config('escape', false);
+        var html = template.compile(source)(data);
+        document.getElementById("details").innerHTML = html;
+    }
+</script>
+</html>
